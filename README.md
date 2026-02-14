@@ -19,8 +19,25 @@ Sem utilização de **Storage Account Keys**, seguindo o princípio do **menor p
 ---
 ## Arquitetura
 
-### Componentes Azure
+### Diagrama simplificado
 
+```mermaid
+flowchart TD
+    A[GitHub] --> B[Pipeline CI – Build]
+    B --> C[Artefato .zip (imutável)]
+    C --> D[Pipeline CD – Multi-stage]
+
+    D --> E[TESTE]
+    D --> F[QA]
+    D --> G[PRODUÇÃO]
+
+    E --> H[Azure Storage (Static Website)]
+    F --> I[Azure Storage (Static Website)]
+    G --> J[Aprovação manual]
+    J --> K[Azure Storage (Static Website)]
+
+---
+### Componentes Azure
 | Recurso | Função |
 |--------|--------|
 | Azure Storage (TESTE) | Hospedagem da aplicação – ambiente de testes |
