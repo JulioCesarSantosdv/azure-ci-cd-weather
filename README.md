@@ -6,7 +6,10 @@ Evolução do projeto **Weather App – Azure Static Web Apps**, com foco na apl
 A aplicação é uma web app estática desenvolvida em **HTML, CSS e JavaScript puro,** hospedada no **Azure Storage (Static Website)** e publicada por meio de um pipeline completo de **CI/CD no Azure DevOps.**
 
 O projeto simula um cenário corporativo ao implementar:
-
+- CI/CD profissional
+- Separção de ambientes
+- Aprovação manual em produção
+- Infraestrutura Serveless no Azure
 - geração de artefato imutável no **Pipeline CI (Build)**
 - promoção controlada entre ambientes no **Pipeline CD (Release multi-stage)**
 - separação de ambientes (**TESTE → QA → PRODUÇÃO**)
@@ -36,82 +39,7 @@ A aplicação é hospedada diretamente no Storage; não há backend nem containe
 
 ---
 
-## Ambientes
 
-| Ambiente | Storage Account |
-|----------|------------------|
-| TESTE    | weatherappteste |
-| QA       | weatherappqa |
-| PRODUÇÃO | weatherappproduction |
-
-Cada ambiente possui uma Storage Account dedicada, garantindo **isolamento e redução de risco**.
-
----
-
-## Pipelines
-
-### Pipeline CI (Build)
-Responsável por:
-
-- obter o código do repositório  
-- empacotar os arquivos da aplicação em um `.zip`  
-- publicar o artefato no Azure DevOps  
-
-#### Características do artefato
-- imutável  
-- versionado  
-- reutilizado em todos os ambientes  
-
----
-
-### Pipeline CD (Release multi-stage)
-Executado automaticamente após o sucesso do CI.
-
-Em cada stage:
-
-- download do artefato  
-- extração do `.zip`  
-- publicação no container `$web` da Storage correspondente  
-
-#### Ordem de promoção
-TESTE → QA → PRODUÇÃO  
-
-O deploy em **PRODUÇÃO** ocorre somente após **aprovação manual**.
-
----
-
-## Governança de Produção
-Implementada via **Azure DevOps Environment** com:
-
-- aprovador obrigatório  
-- bloqueio de execução até validação  
-- auditoria de liberações  
-
-A regra de aprovação é configurada na plataforma (**fora do YAML**), garantindo separação entre:
-
-- definição técnica do pipeline  
-- controle operacional de releases  
-
----
-
-## Segurança
-Autenticação realizada por **Service Connection (Service Principal)** com:
-
-- escopo no Resource Group `rg-weather-app-cicd`  
-- role `Storage Blob Data Contributor`  
-
-O pipeline **não utiliza Account Keys**, seguindo o princípio de **privilégio mínimo**.
-
----
-
-## Infraestrutura Azure
-- **Resource Group:** rg-weather-app-cicd  
-- **Tipo:** StorageV2  
-- **Static Website:** habilitado  
-- **Container:** `$web`  
-- **Região:** East US  
-
-Arquitetura de **baixo custo** e **alta disponibilidade** para aplicações estáticas.
 
 ---
 
@@ -124,16 +52,6 @@ Arquitetura de **baixo custo** e **alta disponibilidade** para aplicações est�
 - Aprovação manual em produção  
 - Deploy idempotente  
 - Agentes efêmeros de pipeline  
-
----
-
-## Limitações Encontradas
-O plano gratuito do Azure DevOps limitou o paralelismo de agentes.
-
-### Solução
-- associação da organização a uma assinatura **Azure Pay-As-You-Go**  
-- liberação do paralelismo  
-- execução do pipeline multi-stage **sem custo**  
 
 ---
 
