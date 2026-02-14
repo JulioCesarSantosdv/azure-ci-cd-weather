@@ -24,6 +24,17 @@ O objetivo é demonstrar práticas de **governança, rastreabilidade e controle 
 
 ## Arquitetura
 
+### Componentes Azure
+
+| Recurso | Função |
+|--------|--------|
+| Azure Storage (TESTE) | Hospedagem da aplicação – ambiente de testes |
+| Azure Storage (QA) | Hospedagem da aplicação – ambiente de validação |
+| Azure Storage (PRODUÇÃO) | Hospedagem da aplicação – ambiente produtivo |
+| Azure DevOps Pipelines (YAML) | Orquestração do CI/CD |
+| Pipeline CI | Build e geração do artefato `.zip` |
+| Pipeline CD | Distribuição do artefato entre os ambientes |
+
 ### Fluxo resumido
 Commit → GitHub  
 → **Pipeline CI (Build)**  
@@ -70,3 +81,4 @@ O **Projeto 2** representa a evolução para um fluxo mais próximo de ambientes
 TESTE → (URL)  
 QA → (URL)  
 PRODUÇÃO → (URL)
+
