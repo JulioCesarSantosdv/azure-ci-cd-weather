@@ -23,18 +23,19 @@ Sem utilização de **Storage Account Keys**, seguindo o princípio do **menor p
 
 ```mermaid
 flowchart TD
-    A[GitHub] --> B[Pipeline CI – Build]
-    B --> C[Artefato .zip (imutável)]
-    C --> D[Pipeline CD – Multi-stage]
+    A[GitHub] --> B[Pipeline CI - Build]
+    B --> C[Artefato ZIP imutavel]
+    C --> D[Pipeline CD - Multi-stage]
 
     D --> E[TESTE]
     D --> F[QA]
-    D --> G[PRODUÇÃO]
+    D --> G[PRODUCAO]
 
-    E --> H[Azure Storage (Static Website)]
-    F --> I[Azure Storage (Static Website)]
-    G --> J[Aprovação manual]
-    J --> K[Azure Storage (Static Website)]
+    E --> H[Azure Storage Static Website]
+    F --> I[Azure Storage Static Website]
+    G --> J[Aprovacao manual]
+    J --> K[Azure Storage Static Website]
+
 
 ---
 ### Componentes Azure
