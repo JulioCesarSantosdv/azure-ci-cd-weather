@@ -1,9 +1,11 @@
 # Weather App – CI/CD Multi-Environment com Azure DevOps
 
 ## Descrição
-Aplicação web estática desenvolvida com **HTML, CSS e JavaScript puro**, publicada em **Azure Storage (Static Website)** por meio de um pipeline completo de **CI/CD no Azure DevOps**.
+Evolução do projeto **Weather App – Azure Static Web Apps**, com foco na aplicação de práticas reais de **DevOps, automação de deploy e segregação de ambientes.**
 
-Este projeto simula um cenário corporativo com:
+A aplicação é uma web app estática desenvolvida em **HTML, CSS e JavaScript puro,** hospedada no **Azure Storage (Static Website)** e publicada por meio de um pipeline completo de **CI/CD no Azure DevOps.**
+
+O projeto simula um cenário corporativo ao implementar:
 
 - geração de artefato imutável no **Pipeline CI (Build)**
 - promoção controlada entre ambientes no **Pipeline CD (Release multi-stage)**
