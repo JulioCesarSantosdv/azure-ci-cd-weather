@@ -16,10 +16,6 @@ Este projeto simula um cenário corporativo ao implementar:
 
 O objetivo é demonstrar práticas de **governança, rastreabilidade e controle de acesso**, sem utilização de chaves de Storage.
 
-👉 Documentação do Projeto  
-👉 Diagrama de Arquitetura  
-👉 Slides  
-
 ---
 
 ## Arquitetura
@@ -81,4 +77,5 @@ O **Projeto 2** representa a evolução para um fluxo mais próximo de ambientes
 TESTE → (URL)  
 QA → (URL)  
 PRODUÇÃO → (URL)
+
 
