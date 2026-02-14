@@ -1,23 +1,22 @@
 # Weather App – CI/CD Multi-Environment com Azure DevOps
 
-## Descrição
-Evolução do projeto **Weather App – Azure Static Web Apps**, com foco na aplicação de práticas reais de **DevOps**, automação de deploy e **segregação de ambientes**.
+### Visão Geral
+Este projeto é a evolução do **Weather App – Azure Static Web Apps**, com foco na aplicação de práticas reais de **DevOps**, automação de deploy e **segregação de ambientes**.
 
 A aplicação é uma web app estática desenvolvida em **HTML, CSS e JavaScript puro**, hospedada no **Azure Storage (Static Website)** e publicada por meio de um pipeline completo de **CI/CD no Azure DevOps**.
 
-Este projeto simula um cenário corporativo ao implementar:
+O objetivo é simular um cenário corporativo implementando:
 
-- pipeline de **CI/CD estruturado**  
-- **artefato imutável** gerado no processo de build  
-- **promoção controlada entre ambientes** (TESTE → QA → PRODUÇÃO)  
-- **aprovação manual em produção** via Azure DevOps Environments  
-- autenticação segura com **Service Connection + RBAC**  
-- infraestrutura **serverless de baixo custo** no Azure  
+- pipeline de **CI/CD estruturado**
+- **artefato imutável** gerado no build
+- **promoção controlada entre ambientes** (TESTE → QA → PRODUÇÃO)
+- **aprovação manual em produção**
+- autenticação segura com **Service Connection + RBAC**
+- infraestrutura **serverless de baixo custo**
 
-O objetivo é demonstrar práticas de **governança, rastreabilidade e controle de acesso**, sem utilização de chaves de Storage.
+Sem utilização de **Storage Account Keys**, seguindo o princípio do **menor privilégio**.
 
 ---
-
 ## Arquitetura
 
 ### Componentes Azure
@@ -31,6 +30,7 @@ O objetivo é demonstrar práticas de **governança, rastreabilidade e controle 
 | Pipeline CI | Build e geração do artefato `.zip` |
 | Pipeline CD | Distribuição do artefato entre os ambientes |
 
+A aplicação é servida diretamente pelo **Azure Storage**, sem backend ou containers.
 ### Fluxo resumido
 Commit → GitHub  
 → **Pipeline CI (Build)**  
