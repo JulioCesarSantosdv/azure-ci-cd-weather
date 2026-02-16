@@ -66,12 +66,16 @@ A aplicação é servida diretamente pelo Storage, sem backend ou containers.
 
 ## Relação com o Projeto 1
 
-| Projeto | Tecnologia de Deploy | Modelo |
-|--------|----------------------|--------|
-| Projeto 1 | Azure Static Web Apps | Deploy direto via GitHub Actions |
-| Projeto 2 | Azure Storage + Azure DevOps | CI/CD multi-ambiente com governança |
+| Aspecto | Projeto 1 | Projeto 2 |
+|--------|-----------|-----------|
+| Serviço | Azure Static Web Apps | Azure Storage Static Website |
+| CI/CD | GitHub Actions | Azure DevOps Pipelines |
+| Ambientes | Produção | Teste / QA / Produção |
+| Aprovação | ❌ | Manual em PRODUÇÃO |
+| Artefatos | Automáticos | Build + Artifact |
+| DevOps real | Básico | Profissional |
 
-O **Projeto 2** representa a evolução para um fluxo mais próximo de ambientes corporativos, com controle de promoção e segregação de ambientes.
+O Projeto 2 representa a evolução para um fluxo mais próximo de ambientes corporativos, com controle de promoção e segregação de ambientes.
 
 ---
 
