@@ -37,7 +37,8 @@ Sem utilização de **Storage Account Keys**, seguindo o princípio do **menor p
 
 A aplicação é servida diretamente pelo **Azure Storage**, sem backend ou containers.
 ### Fluxo resumido
-<img width="1302" height="107" alt="image" src="https://github.com/user-attachments/assets/43f630c6-cd61-4a7d-9c28-1b2a015fbc27" />
+<img width="1366" height="260" alt="image" src="https://github.com/user-attachments/assets/7d98841a-4092-40b4-beb8-8b9fbe3b09da" />
+
  
 
 A aplicação é servida diretamente pelo Storage, sem backend ou containers.
