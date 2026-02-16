@@ -37,12 +37,8 @@ Sem utilização de **Storage Account Keys**, seguindo o princípio do **menor p
 
 A aplicação é servida diretamente pelo **Azure Storage**, sem backend ou containers.
 ### Fluxo resumido
-Commit → GitHub  
-→ **Pipeline CI (Build)**  
-→ geração de artefato `.zip` imutável  
-→ **Pipeline CD (Release multi-stage)**  
-→ TESTE → QA → (Aprovação manual) → PRODUÇÃO  
-→ Deploy no **Azure Storage (Static Website)**  
+<img width="1302" height="107" alt="image" src="https://github.com/user-attachments/assets/43f630c6-cd61-4a7d-9c28-1b2a015fbc27" />
+ 
 
 A aplicação é servida diretamente pelo Storage, sem backend ou containers.
 
