@@ -16,6 +16,7 @@ O objetivo é simular um cenário corporativo implementando:
 
 Sem utilização de **Storage Account Keys**, seguindo o princípio do **menor privilégio**.
 
+  [**Weather App – Azure Static Web Apps**](https://github.com/JulioCesarSantosdv/weather-app-azure) 
 ---
 ## Arquitetura
 ### Diagrama simplificado
