@@ -78,7 +78,7 @@ O Projeto 2 representa a evolução para um fluxo mais próximo de ambientes cor
 
 ---
 
-## Links da Aplicação
+## Links dos Ambientes
 
 - **TESTE** → [Acessar ambiente](https://weatherappteste.z13.web.core.windows.net/)  
 - **QA** → [Acessar ambiente](https://weatherappqa.z13.web.core.windows.net/)  
