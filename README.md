@@ -15,8 +15,7 @@ O objetivo é simular um cenário corporativo implementando:
 - infraestrutura **serverless de baixo custo**
 
 Sem utilização de **Storage Account Keys**, seguindo o princípio do **menor privilégio**.
-
-  [**Weather App – Azure Static Web Apps**](https://github.com/JulioCesarSantosdv/weather-app-azure) 
+  [Weather App – Azure Static Web Apps](https://github.com/JulioCesarSantosdv/weather-app-azure) 
 ---
 ## Arquitetura
 ### Diagrama simplificado
