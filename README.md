@@ -15,7 +15,6 @@ O objetivo é simular um cenário corporativo implementando:
 - infraestrutura **serverless de baixo custo**
 
 Sem utilização de **Storage Account Keys**, seguindo o princípio do **menor privilégio**.
-  [Weather App – Azure Static Web Apps](https://github.com/JulioCesarSantosdv/weather-app-azure) 
 ---
 ## Arquitetura
 ### Diagrama simplificado
@@ -84,5 +83,9 @@ O Projeto 2 representa a evolução para um fluxo mais próximo de ambientes cor
 - **TESTE** → [Acessar ambiente](https://weatherappteste.z13.web.core.windows.net/)  
 - **QA** → [Acessar ambiente](https://weatherappqa.z13.web.core.windows.net/)  
 - **PRODUÇÃO** → [Acessar ambiente](https://weatherappproduction.z13.web.core.windows.net/)
+
+---
+- **Link para o projeto** : [Weather App – Azure Static Web Apps](https://github.com/JulioCesarSantosdv/weather-app-azure) 
+---
 
 
