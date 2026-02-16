@@ -18,8 +18,8 @@ Sem utilização de **Storage Account Keys**, seguindo o princípio do **menor p
 
 ---
 ## Arquitetura
-
 ### Diagrama simplificado
+<img width="1210" height="403" alt="image" src="https://github.com/user-attachments/assets/ca75a435-85e7-496f-a18e-693863d65fc3" />
 
 
 
