@@ -14,7 +14,8 @@ O objetivo é simular um cenário corporativo implementando:
 - autenticação segura com **Service Connection + RBAC**
 - infraestrutura **serverless de baixo custo** <br>
 
-Sem utilização de **Storage Account Keys**, seguindo o princípio do **menor privilégio**.
+Sem utilização de **Storage Account Keys**, seguindo o princípio do **menor privilégio**.<br>
+-  [Documentação](https://www.notion.so/Pipeline-CI-CD-no-Azure-Weather-App-30336cafd1fc80ee9a6bc59bdd0b1863?source=copy_link) 
 
 ---
 ## Arquitetura
