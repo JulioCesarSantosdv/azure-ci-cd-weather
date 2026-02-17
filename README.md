@@ -87,7 +87,10 @@ O Projeto 2 representa a evolução para um fluxo mais próximo de ambientes cor
 - **PRODUÇÃO** → [Acessar ambiente](https://weatherappproduction.z13.web.core.windows.net/)
 
 ---
-- **Link para o projeto** : [Weather App – Azure Static Web Apps](https://github.com/JulioCesarSantosdv/weather-app-azure) 
+- **Link para o projeto** : [Weather App – Azure Static Web Apps](https://github.com/JulioCesarSantosdv/weather-app-azure)
+
+https://github.com/user-attachments/assets/bb220a0e-486a-44f4-8c52-4cb3c06bd5a3
+
 ---
 
 
