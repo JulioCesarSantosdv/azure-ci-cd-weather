@@ -12,9 +12,10 @@ O objetivo é simular um cenário corporativo implementando:
 - **promoção controlada entre ambientes** (TESTE → QA → PRODUÇÃO)
 - **aprovação manual em produção**
 - autenticação segura com **Service Connection + RBAC**
-- infraestrutura **serverless de baixo custo**
+- infraestrutura **serverless de baixo custo** <br>
 
 Sem utilização de **Storage Account Keys**, seguindo o princípio do **menor privilégio**.
+
 ---
 ## Arquitetura
 ### Diagrama simplificado
