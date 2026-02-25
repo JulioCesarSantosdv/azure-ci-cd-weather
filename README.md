@@ -76,7 +76,7 @@ A aplicação é servida diretamente pelo Storage, sem backend ou containers.
 | Artefatos | Automáticos | Build + Artifact |
 | DevOps real | Básico | Profissional |
 
-O Projeto 2 representa a evolução para um fluxo mais próximo de ambientes corporativos, com controle de promoção e segregação de ambientes.
+Este projeto (Projeto 2) representa a evolução para um fluxo mais próximo de ambientes corporativos, com controle de promoção e segregação de ambientes.
 - **Link para o projeto 1** : [Weather App – Azure Static Web Apps](https://github.com/JulioCesarSantosdv/weather-app-azure)
 ---
 
